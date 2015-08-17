@@ -11,11 +11,11 @@ board.on("ready", function() {
   lastFlowPinState = 0;
 
   // Check Digital Pin to see if theres a change
-  var x = this.digitalRead(7, function(value) {
+ this.digitalRead(7, function(value) {
     // send the pin status to flowSignal helper
     flowSignal(value);
   });
-
+//switch to temporal
   setInterval(function() {
     var litres = pulses;
     litres /= 7.5;
